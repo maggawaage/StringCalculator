@@ -21,8 +21,12 @@ public class Calculator{
 
      private static int sum(String [] numbers) {
         int total = 0;
+        int newNumber;
         for(String number : numbers) {
-            total +=toInt(number);
+            newNumber = toInt(number);
+            if(newNumber > 1000)
+                newNumber = 0;
+            total += newNumber;
         }
         return total;
     }
