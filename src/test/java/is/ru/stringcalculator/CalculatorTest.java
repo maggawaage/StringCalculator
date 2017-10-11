@@ -10,8 +10,13 @@ public class CalculatorTest{
         assertEquals(0, Calculator.add(""));
     }
 
-    @Test
+    @Test //2
     public void testOneNumber() {
     	assertEquals(1, Calculator.add("1"));
+    }
+
+    @Test //3
+    public void testTwoNumber() {
+    	assertEquals(3, Calculator.add("1,2"));
     }
  }
