@@ -5,8 +5,13 @@ import org.junit.Test;
 
 public class CalculatorTest{
 
-	@Test
+	@Test //1
     public void testEmptyString() {
         assertEquals(0, Calculator.add(""));
     }
-}
+
+    @Test
+    public void testOneNumber() {
+    	assertEquals(1, Calculator.add("1"));
+    }
+ }
