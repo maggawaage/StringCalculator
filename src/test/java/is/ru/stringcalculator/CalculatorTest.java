@@ -29,4 +29,8 @@ public class CalculatorTest{
     public void testNewLinesBetweenNumbers(){
     	assertEquals(6, Calculator.add("1\n2,3"));
     }
+     @Test //6
+    public void testLinesBetweenNumbersOnly(){
+    	assertEquals(6, Calculator.add("1\n2\n3"));
+    }
  }
